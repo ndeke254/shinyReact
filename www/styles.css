@@ -1,0 +1,108 @@
+body {
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+/* Keyframes */
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+.dropdown-menu-end[data-bs-popper] {
+    right: 0;
+    transform-origin: top;
+    animation: growDown 300ms ease-in-out forwards;
+    left: auto;
+}
+
+div#user_profile-user_info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button#user_profile-edit_profile, 
+button#user_profile-user_settings,
+button#user_profile-sign_out {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: beige;
+    border: 0;
+}
+
+ul.dropdown-menu.dropdown-menu-right.dropdown-menu-end.show {
+    background-color: beige;
+}
+
+button#user_profile-edit_profile:hover, 
+button#user_profile-user_settings:hover,
+button#user_profile-sign_out:hover {
+    background-color: whitesmoke;
+    border-radius: 0;
+
+}
+
+div#user_control_state {
+    display: flex;
+    justify-content: flex-end;
+}
+
+i.fas {
+    padding-right: 10px;
+}
+
+button#waiting_user-refresh {
+    margin: auto;
+    display: flex;
+    
+}
+
+img.img-fluid.card-img-top.html-fill-item {
+    margin: auto;
+}
+
+div#status {
+    margin: auto;
+}
+
+button#logged_enabled-actions_button {
+    margin: auto;
+    display: flex;
+}
+
+button#polished-go_to_admin_panel {
+ display: none;
+}
+div#logged_enabled-active {
+    font-size: 15px;
+}
+
+.fas {
+ animation: growDown 300ms ease-in-out forwards;
+}
+.bslib-value-box .value-box-showcase .bi, .bslib-value-box .value-box-showcase .fa, .bslib-value-box .value-box-showcase .fab, .bslib-value-box .value-box-showcase .fas, .bslib-value-box .value-box-showcase .far {
+    opacity: .85;
+    min-width: 50px;
+    max-width: 125%;
+    animation: growDown 300ms ease-in-out forwards;
+}
+div#logged_enabled-admin {
+    font-size: 15px;
+}
+hr {
+ margin: 5px;
+ }
+ .btn-default {
+ background-color: #41779f;
+}
+
+.btn-default:hover {
+ background-color: #20c997;
+}
